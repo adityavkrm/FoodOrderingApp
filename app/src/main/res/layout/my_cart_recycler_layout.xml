@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="68pt"
+        android:backgroundTint="@color/lightbrown"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15sp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cartItemImage"
+            android:layout_width="50pt"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="#DFEAD3"
+            android:src="@drawable/bkchickendoublepattyburger"/>
+
+
+        <TextView
+            android:id="@+id/cartItemTitle"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Mc Aloo Tikki Burger"
+            android:layout_toRightOf="@id/cartItemImage"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="7pt"/>
+
+
+            <ImageView
+                android:id="@+id/plusicon"
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:background="@drawable/minus_button_border"
+                android:layout_below="@id/cartItemTitle"
+                android:layout_marginStart="66sp"
+                android:layout_marginTop="29sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/cartItemImage"
+                android:src="@drawable/baseline_add_24" />
+
+
+            <TextView
+                android:id="@+id/counttext"
+                android:layout_width="23sp"
+                android:layout_height="23sp"
+                android:layout_below="@id/cartItemTitle"
+                android:text="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="27sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/cartItemImage"
+                />
+
+
+            <ImageView
+                android:id="@+id/minusicon"
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:background="@drawable/minus_button_border"
+                android:layout_below="@id/cartItemTitle"
+                android:layout_marginStart="17sp"
+                android:layout_marginTop="29sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/cartItemImage"
+                android:src="@drawable/baseline_remove_24" />
+
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="10sp"
+                android:layout_height="10sp"
+                android:layout_marginRight="7pt"
+                android:src="@drawable/cross"
+                android:layout_marginTop="10pt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:textColor="#09970F"
+                android:layout_toLeftOf="@id/cartItemCost"
+                android:layout_below="@id/cartItemTitle"
+                android:layout_marginTop="33sp"
+                android:textSize="15sp"
+                android:layout_marginRight="1pt"/>
+
+
+            <TextView
+                android:id="@+id/cartItemCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99"
+                android:textColor="#09970F"
+                android:textSize="16sp"
+                android:layout_below="@id/cartItemTitle"
+                android:layout_marginTop="32sp"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:layout_marginRight="10pt"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10sp"
+           android:layout_marginBottom="5sp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/deliverto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi,"
+            android:layout_marginTop="7sp"
+            android:layout_marginLeft="60sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aditya Vikram"
+            android:layout_marginTop="-5sp"
+            android:layout_marginLeft="60sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16dp"
+            android:textColor="#293241"
+            android:textStyle="bold"/>
+
+       </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profilpicimage"
+            android:layout_width="33sp"
+            android:layout_height="33sp"
+            android:layout_marginTop="24sp"
+            android:layout_marginLeft="13sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="15sp"
+            android:src="@drawable/user"
+            />
+
+       <ImageView
+           android:id="@+id/mycartbutton"
+           android:layout_width="33sp"
+           android:layout_height="33sp"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/cart"
+           android:layout_marginTop="24sp"
+           android:layout_marginRight="16sp"/>
+
+
+
+   </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/noodles"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-160sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:text="Food for"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:text="Every Mood"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/textviewgreenlayout"
+        android:padding="10sp"
+        android:textSize="13sp"
+        android:text="Order Now"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:layout_marginTop="33sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="#293241"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="15sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11sp"
+        android:layout_marginRight="13sp"
+        android:scrollbars="horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="#293241"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="15sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popularRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="290sp"
+        android:layout_marginLeft="11sp"
+        android:layout_marginRight="13sp" />
+
+</LinearLayout>
+
